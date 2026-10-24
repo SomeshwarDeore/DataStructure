@@ -1,8 +1,8 @@
-n=[1,2,3,4,5,6,7,8]
+n=[1,2,3,4,5,6,6,4,5,6,6,6,6,7,3,1,8]
 m=[1,2,3,4,9,6]
 
 dict={}
-
+result={}
 for i in n:
     if i in dict:
         dict[i]+=1
@@ -12,7 +12,9 @@ for i in n:
 
 for i in m:
     if i in dict:
-        print(dict[i])
+        result[i]=dict[i]
         
     else:
-        print(0)    
+        print(0)
+        
+print(result)            
